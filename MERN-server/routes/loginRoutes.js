@@ -27,6 +27,7 @@ router.post('/register', async (req, res) => {
     })
 })
 
+
 router.post(`/login`, async (req, res) => {
     const { email, password } = req.body
 
@@ -52,6 +53,19 @@ router.post(`/login`, async (req, res) => {
         return res.status(400).json({ msg: 'Invalid credential' })
     }
 })
+
+
+router.get('/logout', async (req, res) => {
+    if(req.session.user){
+        req.session.destroy(err => {
+            if(err)
+                return res.status(500).send("Unable to Logout!");
+            else
+                return res.status(200).json({"msg": "Logout Successfull..."});
+        })
+    }
+})
+
 
 router.get('/isAuth', async (req, res) => {
     if (req.session.user) {
