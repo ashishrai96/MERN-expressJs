@@ -6,7 +6,8 @@ const MongoDBStore = require('connect-mongodb-session')(session)
 const cors = require('cors')
 const bodyParser = require('body-parser')
 
-const loginRouter = require('./routes/loginRoutes')
+const loginRoutes = require('./routes/loginRoutes')
+const studentRoutes = require('./routes/studentRoutes')
 
 const app = express()
 const port = process.env.PORT || 5001
@@ -48,7 +49,8 @@ app.use(
 
 
 // ROUTERS
-app.use('/api', loginRouter)
+app.use('/api', loginRoutes)
+app.use('/std', studentRoutes)
 
 // START SERVER
 app.listen(port, () => {
