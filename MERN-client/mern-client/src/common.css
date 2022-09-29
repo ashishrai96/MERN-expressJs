@@ -1,4 +1,43 @@
 .center-div {
     width : fit-content;
     margin : auto;
+    margin-top: 10%;
+    padding: 4%;
+    background-color: rgba(49, 255, 228, 0.895);
+    border-radius: 3%;
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.352);
+    border-width: 0.25px;
+    border-style: solid;
+    border-color: black;
+    font-weight: bold;
+}
+label {
+     font-weight: bold;
+     margin-bottom:15%;
+}
+
+body {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(240,251,90,1) 0%, rgba(0,254,255,1) 100%);
+}
+
+input {
+    margin: 3%;
+    font-weight: bold;
+}
+
+button {
+    padding: 1%;
+    background-color: azure;
+    margin-top: 2%;
+    font-size: 18px;
+    margin-top: 10%;
+    margin-left: 35%;
+    width: fit-content;
+    font-weight: bold;
+}
+
+h1 {
+    width : fit-content;
+    margin : auto;
+    margin-bottom: 10%;
 }
