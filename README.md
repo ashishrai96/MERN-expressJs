@@ -12,6 +12,16 @@
 >## Execution
 - Make sure your present location is inside the **_MERN-server_** folder.
 - Create **.env** file consisting the MongoDB connection URI. You may follow the **`.env sample`** file provided as an example.
+- The Libraries that are used here, (Make sure you install it using `npm` command) 
+    - express 
+    - mongoose 
+    - dotenv 
+    - cors 
+    - body-parser 
+    - bcrypt 
+    - express-session 
+    - connect-mongodb-session
+
 - Next, Run the below command:
     ```
         node app.js
