@@ -13,7 +13,11 @@ function Profile(props) {
     const email = sessionStorage.getItem("curr_email");
     return (<div>
         <button onClick={async (e) =>  {
-                alert("in")
+                const requestOptions = {
+                    method : 'POST',
+                    headers: {'Content-Type': 'application/json' },
+                    credentials : 'include'
+                };
                 var res = await fetch(BACKEND_URI + "logout");
                 alert((await res.json())["msg"]);
 

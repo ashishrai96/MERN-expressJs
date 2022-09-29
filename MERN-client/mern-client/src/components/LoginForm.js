@@ -34,6 +34,7 @@ function LoginForm(props) {
                 const requestOptions = {
                     method : 'POST',
                     headers: {'Content-Type': 'application/json'},
+                    credentials : 'include',
                     body : JSON.stringify({ email : email, password : password })
                 };
 
