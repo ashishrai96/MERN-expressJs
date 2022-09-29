@@ -45,7 +45,7 @@ router.post(`/login`, async (req, res) => {
     if (matchPassword) {
         const userSession = { email: user.email } // creating user session to keep user loggedin also on refresh
         req.session.user = userSession // attach user session to session object from express-session
-
+        req.session.save();
         return res
             .status(200)
             .json({ msg: 'You have logged in successfully', userSession }) // attach user session id to the response. It will be transfer in the cookies

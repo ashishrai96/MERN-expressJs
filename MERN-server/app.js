@@ -25,7 +25,7 @@ const mongoDBstore = new MongoDBStore({
 })
 
 // MIDDLEWARES
-app.use(cors())
+app.use(cors({credentials: true, origin: true}))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 
@@ -39,7 +39,6 @@ app.use(
         store: mongoDBstore,
         cookie: {
             maxAge: MAX_AGE, // this is when our cookies will expired and the session will not be valid anymore (user will be log out)
-            sameSite: false,
             secure: false, // to turn on just in production
         },
         resave: false,

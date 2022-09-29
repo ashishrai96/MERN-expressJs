@@ -14,12 +14,12 @@ function Profile(props) {
     return (<div>
         <button onClick={async (e) =>  {
                 const requestOptions = {
-                    method : 'POST',
-                    headers: {'Content-Type': 'application/json' },
-                    credentials : 'include'
+                    credentials : 'include',
+                    method : 'GET',
+                    headers: {'Content-Type': 'application/json' }
                 };
-                var res = await fetch(BACKEND_URI + "logout");
-                alert((await res.json())["msg"]);
+                var res = await fetch(BACKEND_URI + "logout", requestOptions);
+                {/* alert((await res.json())["msg"]); */}
 
                 if(res.status == 200) {
                     sessionStorage.removeItem("curr_email");

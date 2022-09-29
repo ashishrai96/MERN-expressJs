@@ -32,9 +32,9 @@ function LoginForm(props) {
         <button onClick={async (e) =>  {
                 // send fetch (POST) request to server
                 const requestOptions = {
+                    credentials : 'include',
                     method : 'POST',
                     headers: {'Content-Type': 'application/json'},
-                    credentials : 'include',
                     body : JSON.stringify({ email : email, password : password })
                 };
 
