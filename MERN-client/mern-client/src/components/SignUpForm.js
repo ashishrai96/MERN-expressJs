@@ -8,9 +8,6 @@ const BACKEND_URI = "http://localhost:3001/api/";
 function SignUpForm(props) {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");   
-
-    
-
     return (
     <div className="center-div">
         <h1>Sign Up</h1>
