@@ -10,18 +10,18 @@ function SignUpForm(props) {
     const [password, setPassword] = useState("");   
     return (
     <div className="center-div">
-        <h1>Sign Up</h1>
-        <form>
-            <label>Email Id : </label>
+        <h1 className='text-center'>Sign Up</h1>
+        <form className='form-group'>
+            <label className='m-2 form-label'>Email Id : </label>
             <br/>
-            <input type="text" name="email" value={email} onChange={(e) => setEmail(e.target.value)}/>
+            <input className='m-2 form-control' type="text" name="email" value={email} onChange={(e) => setEmail(e.target.value)}/>
             <br/>
-            <label>Password : </label>
+            <label className='m-2 form-label'>Password : </label>
             <br/>
-            <input type="password" name="password" value={password} onChange={(e) => setPassword(e.target.value)}/>
+            <input className='m-2 form-control' type="password" name="password" value={password} onChange={(e) => setPassword(e.target.value)}/>
             <br/>         
         </form>
-        <button onClick={async (e) =>  {
+        <button className='btn btn-primary position-relative start-50 translate-middle-x' onClick={async (e) =>  {
                 // send fetch (POST) request to server
                 const requestOptions = {
                     method : 'POST',
@@ -35,7 +35,7 @@ function SignUpForm(props) {
                 setPassword("");
             }}>Sign Up</button>
             <br/>
-            <p>Already Registered ? </p> <Link to='/login'> Sign In Here</Link>
+            <p className='m-4'>Already Registered ? <Link to='/login'> Login Here</Link></p> 
     </div>);
 }
 
