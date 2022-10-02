@@ -44,7 +44,6 @@ function LoginForm(props) {
                 setPassword("");
                 if(res.status == 200) {
                     sessionStorage.setItem("curr_email", email);
-                    // sessionStorage.setItem(curr_password, password);
                     navigateToProfile();
                 }
             }}>Login</button>

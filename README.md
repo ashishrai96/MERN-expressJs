@@ -27,3 +27,39 @@
         node app.js
     ```
 
+# MERN - ReactJS [Frontend Client]
+
+- We have created the frontend side of the application using ReactJS.
+- This frontend client contains 3 main components:
+    - LoginForm
+    - SignUpForm
+    - Profile
+
+- The structure of the code is based on the template provided by *create-react-app*.
+- In this project, we have used functional components but you can use class components too if that suits your project.
+- Most of the key concepts that are used in any React application are covered in this project.
+
+### Steps to run the Client App.
+
+- Open a new terminal and navigate to the location MERN-client/mern-client.
+- Run the following command to install the dependencies :
+    ```
+    npm install
+    ```
+    This will create the node_modules folder and install all the packages in it.
+-  Run the following command to start the application:
+    ```
+    npm start
+    ```
+
+## Resources:
+### ReactJS
+-   [Tutorial from official site](https://reactjs.org/tutorial/tutorial.html)
+-   [Tutorial video covering the basics](https://www.youtube.com/watch?v=Ke90Tje7VS0) 
+-   [Functional Components](https://www.knowledgehut.com/blog/web-development/react-functional-components)
+### Babel [just for concept]
+-   [https://babeljs.io/repl](https://babeljs.io/repl)
+        
+This is handled internally by the package
+### MERN Stack
+-   [Step By Step Tutorial](https://codingthesmartway.com/the-mern-stack-tutorial-building-a-react-crud-application-from-start-to-finish-part-1/)

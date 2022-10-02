@@ -46,8 +46,6 @@ function Profile(props) {
 
                 if(res.status == 200) {
                     sessionStorage.removeItem("curr_email");
-
-                    // sessionStorage.setItem(curr_password, password);
                     navigateToLogin();
                 }
             }}>Logout</button>
