@@ -57,6 +57,10 @@
 -   [Tutorial from official site](https://reactjs.org/tutorial/tutorial.html)
 -   [Tutorial video covering the basics](https://www.youtube.com/watch?v=Ke90Tje7VS0) 
 -   [Functional Components](https://www.knowledgehut.com/blog/web-development/react-functional-components)
+-   Already available components:
+    * [Prime React](https://www.primefaces.org/primereact/setup/)
+    * [React Widgets](https://jquense.github.io/react-widgets/docs/)
+ 
 ### Babel [just for concept]
 -   [https://babeljs.io/repl](https://babeljs.io/repl)
         
